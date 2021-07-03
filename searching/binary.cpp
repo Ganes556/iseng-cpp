@@ -8,13 +8,13 @@ int main(){
 	cin >> cari;
 	int awal,tengah,akhir;
 	
-	awal = 0;
-	akhir = 4;
+	awal = 0; // posisi awal
+	akhir = 4; // posisi akhir = banyak data-1
 	
 	while(awal <= akhir){	
 	
-		tengah = (awal+akhir)/2;
-		
+		tengah = (awal+akhir)/2; // data tengah
+		// pengecekan nilai yg dicari dengan nilai tengah
 		if(cari > data[tengah] ){
 			awal = tengah+1;		
 		}else if(cari < data[tengah]){

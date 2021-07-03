@@ -1,21 +1,32 @@
 # include <iostream>
-# include <conio>
+using namespace std;
 
 int main(){
-	
-	int Dipa[9] = {2,1,3,4,6,7,8,9,5};
+	//data
+	int data[5] = {8,0,1,1,10};
 	int cari;
 	
-	cout << "Masukan Nilai Yang Dicari >> ";
+	cout << "Pencarian : ";
 	cin >> cari;
 	
-	for(int i = 0; i < 9; i++){
-		if(cari == Dipa[i]){
-			cout << "Ada"<< endl;
-			break;
-		}else if(i == 8){
-			cout << "Tidak ada"<<endl;
+	bool ada = false;
+	int jumlah = 0;
+	
+	for(int i = 0; i < 5; i++){
+		// check jika ada
+		if(cari == data[i]){
+			// ganti ada dengan true
+			ada = true;
+			// tambahkan jumlah yg ditemukan
+			jumlah++;
 		}
 	}
-	getch();
+	
+	// tampilkan
+	if(ada){
+		cout << "Nilai " << cari << " ditemukan!" << endl;
+		cout << "Jumlah yang ditemukan : " << jumlah;
+	}else{
+		cout << "Nilai " << cari << " tidak ditemukan!";
+	}
 }

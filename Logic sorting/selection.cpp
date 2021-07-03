@@ -8,16 +8,18 @@ int main(){
    // algoritma
    for(int i=0; i < 5; i++){
 
-      temp = i;
-      swap = b[i];
+        temp = i;
+        swap = b[i];
+      	// check nilai terkecil di urutan berikutnya
    		for(int j= i+1; j<5; j++){
         	if(b[j] < b[temp]){
       			temp = j;
         	}
 
       	}
-      b[i] = b[temp];
-      b[temp] = swap;
+    // pertukaran
+        b[i] = b[temp];
+        b[temp] = swap;
 
    }
    

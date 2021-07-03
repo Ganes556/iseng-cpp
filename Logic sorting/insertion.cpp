@@ -2,10 +2,10 @@
 using namespace std;
 
 int main(){
-	int a[5] = {3,1,4,0,2};
+	int a[6] = {2,8,5,3,9,4};
 	int k,y,i;
 	// k nya menjadi kunci
-	for(k =1; k < 5; k++){
+	for(k =1; k < 6; k++){
 		
 		y = a[k];
 		
@@ -22,7 +22,8 @@ int main(){
 	
 	
 	for(i = 0; i < 5; i++){
-		cout << a[i] << endl;
+		cout << a[i] << " ";
 	}
 	
 }
+
